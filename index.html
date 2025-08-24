@@ -17,7 +17,7 @@
         .container{width:min(1180px,92vw);margin:0 auto;}
 
         /* HERO */
-        .hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('uploaded:Screenshot_5.jpg-a5a752a8-112a-4da7-a81f-dec88a7f7b23') center/cover no-repeat;min-height:92vh;display:block;padding:60px 0;}
+        .hero{background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url('https://ucbd.edu.bd/wp-content/uploads/2024/12/10.jpg') center/cover no-repeat;min-height:92vh;display:block;padding:60px 0;}
         .hero-row{display:flex;align-items:flex-start;justify-content:space-between;gap:32px;}
         .hero-content{color:#fff;max-width:56%;}
         .hero-content h1{font-size:46px;line-height:1.15;margin:0 0 14px;font-weight:700;}
@@ -50,6 +50,29 @@
         .contact-card{background:#fdfdfd;border-radius:14px;padding:28px;box-shadow:0 6px 20px rgba(0,0,0,.08);border:1px solid #eee}
         .contact-card h3{margin-top:0;color:var(--brand)}
         .contact-card p{margin:6px 0;color:#444}
+        
+        /* Thank You Page */
+        .thank-you-page {
+            background-color: var(--brand);
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .thank-you-page h1 {
+            font-size: 64px;
+            margin: 0;
+        }
+
+        .thank-you-page p {
+            font-size: 24px;
+            margin-top: 10px;
+        }
 
         footer{text-align:center;padding:25px;color:#777;border-top:1px solid #eee;margin-top:40px;background:#f9f9f9}
 
@@ -67,113 +90,133 @@
     </style>
 </head>
 <body>
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-row">
-            <div class="hero-content">
-                <h1>Monash University Foundation Year (MUFY) Standard Program</h1>
-                <p>Your direct pathway to Monash University, Australia. Study at UCBD Dhaka and secure guaranteed entry into Monash University upon completion.</p>
-            </div>
-
-            <div class="form-box">
-                <h3>Apply Now</h3>
-                <form class="form-row">
-                    <input type="text" placeholder="First Name*" required>
-                    <input type="text" placeholder="Last Name*" required>
-                    <input class="full" type="email" placeholder="Email*" required>
-                    <input class="full" type="tel" placeholder="Phone Number*" required>
-                    <select required><option>Intake Month*</option><option>January</option><option>July</option><option>August</option></select>
-                    <select required><option>Intake Year*</option><option>2025</option><option>2026</option></select>
-                    <button class="full" type="submit">Submit Application</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- PROGRAM AT A GLANCE -->
-    <section class="section">
-        <div class="container">
-            <h2>Program at a glance</h2>
-            <div class="cards">
-                <div class="card"><h3>Destination</h3><p>Guaranteed first year entry at Monash University*</p></div>
-                <div class="card"><h3>Campus</h3><p>Gulshan, Dhaka, study locally and transfer globally</p></div>
-                <div class="card"><h3>Intakes</h3><p>January, July and August*</p></div>
-                <div class="card"><h3>Subjects</h3><p>Choose from 13 subjects. English is compulsory.</p></div>
-                <div class="card"><h3>Contact hours</h3><p>5 hours per unit each week</p></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- OVERVIEW -->
-    <section class="section">
-        <div class="container">
-            <h2>Program overview</h2>
-            <p>The MUFY Standard Program is a comprehensive pre university course designed to prepare students for undergraduate study in Australia. Learn from experienced, Monash approved faculty at UCBD, gain essential academic skills, and enjoy a seamless transition to Monash University with support at every stage.</p>
-        </div>
-    </section>
-
-    <!-- MAJORS -->
-    <section class="section">
-        <div class="container">
-            <h2>Majors you can pursue at Monash</h2>
-            <div class="cards">
-                <div class="card"><h3>Business and Commerce</h3></div>
-                <div class="card"><h3>Engineering</h3></div>
-                <div class="card"><h3>Information Technology</h3></div>
-                <div class="card"><h3>Medicine, Nursing and Health Sciences</h3></div>
-                <div class="card"><h3>Law</h3></div>
-                <div class="card"><h3>Science</h3></div>
-                <div class="card"><h3>Arts and Humanities</h3></div>
-                <div class="card"><h3>Pharmacy and Pharmaceutical Sciences</h3></div>
-                <div class="card"><h3>Design and Architecture</h3></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- STUDENT REVIEWS -->
-    <section class="section">
-        <div class="container">
-            <h2>What Our Students Say</h2>
-            <div class="carousel">
-                <iframe src="https://www.youtube.com/embed/ZjyKngWk_zo" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
-                <iframe src="https://www.youtube.com/embed/_0WaDFjt5nM" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
-                <iframe src="https://www.youtube.com/embed/yOfeEpBUt1k" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
-                <iframe src="https://www.youtube.com/embed/SwF8eG0EuwI" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section">
-        <div class="container">
-            <h2>Campus and contact information</h2>
-            <div class="contact-info">
-                <div class="contact-card">
-                    <h3>Our Campus</h3>
-                    <p><strong>Universal College Bangladesh (UCBD)</strong></p>
-                    <p>SA Tower, 1 Gulshan Avenue, Dhaka 1212</p>
+    <!-- MAIN CONTENT -->
+    <div id="main-content">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container hero-row">
+                <div class="hero-content">
+                    <h1>Monash University Foundation Year (MUFY) Standard Program</h1>
+                    <p>Your direct pathway to Monash University, Australia & Malaysia. Study at UCBD Dhaka and secure guaranteed entry into Monash University upon completion.</p>
                 </div>
-                <div class="contact-card">
-                    <h3>Hotline</h3>
-                    <p>+880 188 641 2222</p>
-                    <p>+880 1844 277 343</p>
-                    <p>+880 184 427 7342</p>
-                    <p>+880 189 601 3882</p>
-                </div>
-                <div class="contact-card">
-                    <h3>Email</h3>
-                    <p>admission@ucbd.edu.bd</p>
-                    <p>info@ucbd.edu.bd</p>
+
+                <div class="form-box">
+                    <h3>Apply Now</h3>
+                    <form id="application-form" class="form-row">
+                        <input type="text" placeholder="First Name*" required>
+                        <input type="text" placeholder="Last Name*" required>
+                        <input class="full" type="email" placeholder="Email*" required>
+                        <input class="full" type="tel" placeholder="Phone Number*" required>
+                        <select required><option>Intake Month*</option><option>January</option><option>July</option><option>August</option></select>
+                        <select required><option>Intake Year*</option><option>2025</option><option>2026</option></select>
+                        <button class="full" type="submit">Submit Application</button>
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer>
-        <p>© <span id="year"></span> UCBD. All rights reserved.</p>
-    </footer>
+        <!-- PROGRAM AT A GLANCE -->
+        <section class="section">
+            <div class="container">
+                <h2>Program at a glance</h2>
+                <div class="cards">
+                    <div class="card"><h3>Destination</h3><p>Guaranteed first year entry at Monash University*</p></div>
+                    <div class="card"><h3>Campus</h3><p>Gulshan, Dhaka, study locally and transfer globally</p></div>
+                    <div class="card"><h3>Intakes</h3><p>January, July and August*</p></div>
+                    <div class="card"><h3>Subjects</h3><p>Choose from 13 subjects. English is compulsory.</p></div>
+                    <div class="card"><h3>Contact hours</h3><p>5 hours per unit each week</p></div>
+                </div>
+            </div>
+        </section>
 
-    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+        <!-- OVERVIEW -->
+        <section class="section">
+            <div class="container">
+                <h2>Program overview</h2>
+                <p>The MUFY Standard Program is a comprehensive pre university course designed to prepare students for undergraduate study in Australia. Learn from experienced, Monash approved faculty at UCBD, gain essential academic skills, and enjoy a seamless transition to Monash University with support at every stage.</p>
+            </div>
+        </section>
+
+        <!-- MAJORS -->
+        <section class="section">
+            <div class="container">
+                <h2>Majors you can pursue at Monash</h2>
+                <div class="cards">
+                    <div class="card"><h3>Business and Commerce</h3></div>
+                    <div class="card"><h3>Engineering</h3></div>
+                    <div class="card"><h3>Information Technology</h3></div>
+                    <div class="card"><h3>Medicine, Nursing and Health Sciences</h3></div>
+                    <div class="card"><h3>Law</h3></div>
+                    <div class="card"><h3>Science</h3></div>
+                    <div class="card"><h3>Arts and Humanities</h3></div>
+                    <div class="card"><h3>Pharmacy and Pharmaceutical Sciences</h3></div>
+                    <div class="card"><h3>Design and Architecture</h3></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STUDENT REVIEWS -->
+        <section class="section">
+            <div class="container">
+                <h2>What Our Students Say</h2>
+                <div class="carousel">
+                    <iframe src="https://www.youtube.com/embed/ZjyKngWk_zo" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
+                    <iframe src="https://www.youtube.com/embed/_0WaDFjt5nM" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
+                    <iframe src="https://www.youtube.com/embed/yOfeEpBUt1k" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
+                    <iframe src="https://www.youtube.com/embed/SwF8eG0EuwI" allowfullscreen rel="noopener noreferrer nofollow"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="section">
+            <div class="container">
+                <h2>Campus and contact information</h2>
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Our Campus</h3>
+                        <p><strong>Universal College Bangladesh (UCBD)</strong></p>
+                        <p>SA Tower, 1 Gulshan Avenue, Dhaka 1212</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Hotline</h3>
+                        <p>+880 188 641 2222</p>
+                        <p>+880 1844 277 343</p>
+                        <p>+880 184 427 7342</p>
+                        <p>+880 189 601 3882</p>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Email</h3>
+                        <p>admission@ucbd.edu.bd</p>
+                        <p>info@ucbd.edu.bd</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>© <span id="year"></span> UCBD. All rights reserved.</p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        document.getElementById('application-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submission
+            
+            const form = document.getElementById('application-form');
+            if (form.checkValidity()) {
+                const thankYouHTML = `
+                    <div class="thank-you-page">
+                        <h1>Thank You!</h1>
+                        <p>Your application has been submitted successfully. We will be in touch shortly.</p>
+                    </div>
+                `;
+                document.body.innerHTML = thankYouHTML;
+            } else {
+                form.reportValidity();
+            }
+        });
+    </script>
 </body>
 </html>
-
