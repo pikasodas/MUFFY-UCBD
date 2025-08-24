@@ -206,6 +206,9 @@
             
             const form = document.getElementById('application-form');
             if (form.checkValidity()) {
+                // Change the URL slug without reloading the page
+                history.pushState({}, 'Thank You Page', '/thank-you');
+
                 const thankYouHTML = `
                     <div class="thank-you-page">
                         <h1>Thank You!</h1>
